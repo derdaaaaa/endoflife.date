@@ -19,14 +19,7 @@ permalink: /fritzbox
 alternate_urls:
 -   /Fritz!Box
 
-# Command that can be used to check the current product version (optional).
-#versionCommand: swish and flick
-
-# The more information link (optional).
-# If provided, this link is displayed after the product's description.
-# This link should contain information about the release policy and schedule. This is NOT the product URL!
-# Do not use a localized URL (such as one containing en-us) if possible.
-releasePolicyLink: https://nodejs.org/about/releases/
+releasePolicyLink: https://avm.de/service/status-der-produktunterstuetzung/fritzbox/
 
 
 # Template to be used to generate a link for the releases (optional).
@@ -53,47 +46,27 @@ LTSLabel: "<abbr title='Extra Long Support'>ELS</abbr>"
 # The value of this property can be set to any string to override the default column label.
 eolColumn: Security Support
 
-# Threshold at which the background color of the cycle's "eol" cell changes to indicate
-# that the EOL date is approaching (optional, default = 121 days).
-# If a fixed EOL calculation is taken the rule of thumb one third of the time can be applied.
-# e.g. eol = releaseDate + 6w -> 2w eolWarnThreshold: 14
+
 eolWarnThreshold: 121
 
-# Whether the "Active Support" column should be displayed (optional, default = false).
-# The value of this property can be set to any string to override the default column label.
 activeSupportColumn: Active Support
 
-# Threshold at which the background color of the cycle's "activeSupport" cell changes to indicate
-# that the end of active support date is approaching (optional, default = 121 days).
-# If a fixed support calculation is taken the rule of thumb one third of the time can be applied.
-# e.g. activeSupport = releaseDate + 3w -> 1w activeSupportWarnThreshold: 7
 activeSupportWarnThreshold: 121
 
-# Whether the "Latest" column should be displayed (optional, default = true).
-# The value of this property can be set to any string to override the default column label.
+
 releaseColumn: Latest
 
-# Whether the "Released" column should be displayed (optional, default = false).
-# The value of this property can be set to any string to override the default column label.
+
 releaseDateColumn: Released
 
-# Whether the "Discontinued" column should be displayed (optional, default = false).
-# Set to true if you're tracking a device. This usually means the device is no longer available for
-# sale or is no longer being manufactured.
-# The value of this property can be set to any string to override the default column label.
+
 discontinuedColumn: Discontinued
 
-# Threshold at which the background color of the cycle's "discontinued" cell changes to indicate
-# that the discontinued date is approaching (optional, default = 121 days).
+
 discontinuedWarnThreshold: 121
 
-# Whether the "Extended Support" column should be displayed (optional, default = false).
-# The value of this property can be set to any string to override the default column label.
-extendedSupportColumn: Extended Support
 
-# Threshold at which the background color of the cycle's "extendedSupport" cell changes to indicate
-# that the extended support date is approaching (optional, default = 121 days).
-extendedSupportWarnThreshold: 121
+
 
 # Custom columns configuration (optional).
 # Custom columns are columns that will be added to the releases table and populated based on a
