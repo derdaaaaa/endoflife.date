@@ -1,5 +1,5 @@
 ---
-title: FritzBox!
+title: Fritz!Box
 category: device
 
 #tags: amazon linux-distribution
