@@ -14,11 +14,6 @@ iconSlug: codemagic
 # Main URL for the page (mandatory).
 permalink: /fritzbox
 
-# Alternate URLs that will redirect to the permalink (optional).
-# This is nice to let people use easier-to-remember URLs. For example, we redirect /golang to /go .
-alternate_urls:
--   /Fritz!Box
-
 releasePolicyLink: https://avm.de/service/status-der-produktunterstuetzung/fritzbox/
 
 
