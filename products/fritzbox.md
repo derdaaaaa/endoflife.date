@@ -17,7 +17,7 @@ permalink: /fritzbox
 # Alternate URLs that will redirect to the permalink (optional).
 # This is nice to let people use easier-to-remember URLs. For example, we redirect /golang to /go .
 alternate_urls:
--   /Fritz!Box
+  - /FritzBox
 
 # Command that can be used to check the current product version (optional).
 #versionCommand: swish and flick
@@ -27,7 +27,6 @@ alternate_urls:
 # This link should contain information about the release policy and schedule. This is NOT the product URL!
 # Do not use a localized URL (such as one containing en-us) if possible.
 releasePolicyLink: https://nodejs.org/about/releases/
-
 
 # Template to be used to generate a link for the releases (optional).
 # Available variables inside the template are:
@@ -103,7 +102,6 @@ extendedSupportWarnThreshold: 121
 # Note that the use of a table include (see https://github.com/endoflife-date/endoflife.date/blob/master/products/ansible.md)
 # is usually preferred when there is more than two or three custom columns.
 customColumns:
-
   # Name of the custom property in release cycles (mandatory).
   # If the release cycle does not declare this property, the label 'N/A' will be displayed instead.
   # Custom properties follows the camel-case syntax for naming.
@@ -166,7 +164,7 @@ auto:
       # A liquid template using the captured variables from the regex above that renders the final version
       # (optional, default can handle versions having a 'major', 'minor', 'patch' and 'tiny' version).
       # You can use liquid templating here.
-      template: '..'
+      template: ".."
 
     # Configuration for auto-update based on Docker Hub.
     # The value must be the "owner/repo" combination for a docker hub public image.
@@ -192,7 +190,7 @@ auto:
       # A liquid template using the captured variables from the regex above that renders the final version
       # (optional, default can be found on https://github.com/endoflife-date/release-data/blob/main/src/distrowatch.py#L13 ).
       # You can use liquid templating here.
-      template: ''
+      template: ""
 
     # Configuration for auto-update based on Maven Central ( https://search.maven.org ).
     # The value must be the maven coordinates of the artifact, in the form groupId/artifactId.
@@ -227,11 +225,10 @@ identifiers:
 # Releases must be sorted from the newest (on top of the list) to the lowest.
 # Do not add releases that are not considered "stable" (such as RC/Alpha/Beta/Nightly).
 releases:
-
-    # Release range (mandatory, always put in quotes).
-    # This is usually major.minor. Do not prefix with "v" or suffix with ".x".
-    # This becomes part of our API URL, so try to avoid spaces and use lowercase for words.
--   releaseCycle: "1.2"
+  # Release range (mandatory, always put in quotes).
+  # This is usually major.minor. Do not prefix with "v" or suffix with ".x".
+  # This becomes part of our API URL, so try to avoid spaces and use lowercase for words.
+  - releaseCycle: "1.2"
 
     # Name displayed for the release (optional, default = global releaseLabel value).
     # Use this property if you need to override the release label on a per-release basis.
@@ -301,7 +298,6 @@ releases:
     # Use the special value 'null' (unquoted) if you want to disable the link for a specific cycle of a
     # product having a changelogTemplate.
     link: https://example.com/news/2021-12-25/release-1.2.3
-
 # In the following markdown section, ensure that all the above are present:
 # 1. A one-line statement about what the product is, with a link to the primary website (in a quote).
 # 2. A short summary of the release policy, pointing out the EoL policy as well, if available.
@@ -310,14 +306,15 @@ releases:
 # See also the Guiding Principles on the wiki ( https://github.com/endoflife-date/endoflife.date/wiki/Guiding-Principles )
 # for indication of the tone and voice to use for the text.
 
-
 # Please leave a new line both above and below the triple-dashes.
-
 ---
 
 # All the product information text should be under triple-dashes.
+
 # If you are adding any images in the text, they might get blocked due to our CSP.
+
 # So prefer using releaseImage in such cases. Note that images on the same website as releaseImage
+
 # will not be blocked.
 
 > [Time Turner](https://jkrowling.com/time-turner) is a device that powers short-term time travel.
