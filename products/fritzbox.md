@@ -1,40 +1,8 @@
 ---
-# Name of the product (mandatory).
-title: Timeturner
+title: FritzBox!
+category: device
 
-# Category of the product (mandatory).
-# Possible values are os,database,app,lang,framework,device,service,server-app.
-# If you add a new value, please mention it in the PR Description. Some rough guidelines:
-# - os is for operating systems (and similar projects),
-# - database is for all kinds of database,
-# - app is for end-user applications,
-# - lang is for programming languages,
-# - framework is for application libraries, SDKs, frameworks...,
-# - device is for physical devices,
-# - service is for managed service offerings (SaaS/PaaS...),
-# - server-app is for applications usually installed on the server-side.
-category: os
-
-# Tags of the product (optional).
-#
-# Remember that no tag is better than a useless tag. So do not introduce new tags when adding a product
-# and use one of the tags listed on https://endoflife.date/tags/.
-#
-# Should you want to add a new tag, please open an issue first to discuss it with the team.
-# Moreover, any new tag must be applied in a single PR to all products that should have it.
-#
-# Rules about tags are the following:
-# - must match [a-z0-9\-]+,
-# - must be declared with a space-separated string,
-# - must be alphabetically ordered,
-# - must use singular (for example web-server, not web-servers),
-# - should not be an existing category (note that categories are automatically used as tags),
-# - should be used at least three times, except for tags representing a vendor or a runtime dependency,
-# - must be added for one of the following reasons :
-#   - set a product family such as linux-distribution, web-browser, mobile-phone or web-server,
-#   - set a product vendor such as adobe, amazon or apache,
-#   - set a runtime dependency such as java-runtime, javascript-runtime or php-runtime.
-tags: amazon linux-distribution
+#tags: amazon linux-distribution
 
 # Simple Icons (https://simpleicons.org/) icon slug (optional).
 # Remove this property if the icon is not available on Simple Icons.
@@ -44,15 +12,15 @@ tags: amazon linux-distribution
 iconSlug: codemagic
 
 # Main URL for the page (mandatory).
-permalink: /timeturner
+permalink: /fritzbox
 
 # Alternate URLs that will redirect to the permalink (optional).
 # This is nice to let people use easier-to-remember URLs. For example, we redirect /golang to /go .
 alternate_urls:
--   /hourglass
+-   /Fritz!Box
 
 # Command that can be used to check the current product version (optional).
-versionCommand: swish and flick
+#versionCommand: swish and flick
 
 # The more information link (optional).
 # If provided, this link is displayed after the product's description.
@@ -60,10 +28,6 @@ versionCommand: swish and flick
 # Do not use a localized URL (such as one containing en-us) if possible.
 releasePolicyLink: https://nodejs.org/about/releases/
 
-# An image that shows a graphical representation of the releases (optional).
-# If provided, this image will be displayed at the top of the product's page.
-# This is not the product logo. Remove if you don't find a relevant image.
-releaseImage: https://raw.githubusercontent.com/nodejs/Release/main/schedule.svg?sanitize=true
 
 # Template to be used to generate a link for the releases (optional).
 # Available variables inside the template are:
